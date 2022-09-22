@@ -1,7 +1,7 @@
-- name: "ensure apache2 is installed"
+- name: "Intsalación de apache2"
   apt:
     pkg: apache2
-- name: copy template index 
+- name: COpiar plantilla al index
   template: 
     src: index.j2
     dest: /var/www/html/index.html
@@ -25,4 +25,4 @@
     group: root
     mode: '0644'
   notify:
-    - 
+    - restart apache2
