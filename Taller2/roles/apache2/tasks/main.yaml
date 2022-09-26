@@ -1,7 +1,7 @@
 - name: "Intsalación de apache2"
   apt:
     pkg: apache2
-- name: COpiar plantilla al index
+- name: Copiar plantilla al index
   template: 
     src: index.j2
     dest: /var/www/html/index.html
